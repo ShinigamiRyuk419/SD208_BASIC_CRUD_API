@@ -23,7 +23,7 @@ export class NotesController {
             noteTitle,
             noteDesc,
         );
-        return { id: generatedId };
+        return { id: generatedId, title: noteTitle, description: noteDesc};
     }
 
     @Get()
